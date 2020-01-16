@@ -8,6 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import com.actitime.emailreport.emailreport;
+
 
 public class baselib 
 {
@@ -29,6 +31,9 @@ public class baselib
 	{
 		driver.quit();
 		Reporter.log("Browser closed",true);
+		emailreport e = new emailreport();
+	//	e.main();
+		System.out.println("mail sent");
 	}
 
 }

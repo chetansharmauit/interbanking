@@ -71,6 +71,7 @@ public class MytestNGlistners implements ITestListener
 		Reporter.log("total script passed " + passcount,true);
 		Reporter.log("total script failed " + failcount,true);
 		Reporter.log("total script skipped " + skipcount,true);
+		
 	}
 	
 	

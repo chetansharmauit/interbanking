@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[suite execution startSun Jan 12 22:40:13 IST 2020]]>
+      <![CDATA[suite execution startWed Jan 15 23:21:58 IST 2020]]>
     </line>
     <line>
       <![CDATA[chrome browser launched]]>
@@ -11,7 +11,7 @@
       <![CDATA[url is launched]]>
     </line>
     <line>
-      <![CDATA[validlogin script execution start Sun Jan 12 22:40:25 IST 2020]]>
+      <![CDATA[validlogin script execution start Wed Jan 15 23:22:10 IST 2020]]>
     </line>
     <line>
       <![CDATA[Home page is verified]]>
@@ -23,12 +23,12 @@
       <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="35004" started-at="2020-01-12T17:10:13Z" finished-at="2020-01-12T17:10:48Z">
+  <suite name="Suite" duration-ms="36543" started-at="2020-01-15T17:51:58Z" finished-at="2020-01-15T17:52:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="35004" started-at="2020-01-12T17:10:13Z" finished-at="2020-01-12T17:10:48Z">
+    <test name="Test" duration-ms="36543" started-at="2020-01-15T17:51:58Z" finished-at="2020-01-15T17:52:34Z">
       <class name="com.actitime.scripts.Logintest">
-        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.actitime.scripts.Logintest@39c0f4a]" name="precondition" is-config="true" duration-ms="12339" started-at="2020-01-12T17:10:13Z" finished-at="2020-01-12T17:10:25Z">
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String)[pri:0, instance:com.actitime.scripts.Logintest@42e26948]" name="precondition" is-config="true" duration-ms="12703" started-at="2020-01-15T17:51:58Z" finished-at="2020-01-15T17:52:10Z">
           <params>
             <param index="0">
               <value>
@@ -50,10 +50,10 @@
             </line>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="validlogin()[pri:0, instance:com.actitime.scripts.Logintest@39c0f4a]" name="validlogin" duration-ms="21900" started-at="2020-01-12T17:10:25Z" finished-at="2020-01-12T17:10:47Z">
+        <test-method status="PASS" signature="validlogin()[pri:0, instance:com.actitime.scripts.Logintest@42e26948]" name="validlogin" duration-ms="22919" started-at="2020-01-15T17:52:10Z" finished-at="2020-01-15T17:52:33Z">
           <reporter-output>
             <line>
-              <![CDATA[validlogin script execution start Sun Jan 12 22:40:25 IST 2020]]>
+              <![CDATA[validlogin script execution start Wed Jan 15 23:22:10 IST 2020]]>
             </line>
             <line>
               <![CDATA[Home page is verified]]>
@@ -63,7 +63,55 @@
             </line>
           </reporter-output>
         </test-method> <!-- validlogin -->
-        <test-method status="PASS" signature="Postcondition()[pri:0, instance:com.actitime.scripts.Logintest@39c0f4a]" name="Postcondition" is-config="true" duration-ms="735" started-at="2020-01-12T17:10:47Z" finished-at="2020-01-12T17:10:48Z">
+        <test-method status="FAIL" signature="Postcondition()[pri:0, instance:com.actitime.scripts.Logintest@42e26948]" name="Postcondition" is-config="true" duration-ms="884" started-at="2020-01-15T17:52:33Z" finished-at="2020-01-15T17:52:34Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/sun/mail/util/MailLogger]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/sun/mail/util/MailLogger
+at javax.mail.Session.initLogger(Session.java:283)
+at javax.mail.Session.<init>(Session.java:268)
+at javax.mail.Session.getDefaultInstance(Session.java:378)
+at com.actitime.emailreport.emailreport.main(emailreport.java:44)
+at com.actitime.generic.baselib.Postcondition(baselib.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: com.sun.mail.util.MailLogger
+at java.net.URLClassLoader.findClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
             <line>
               <![CDATA[Browser closed]]>
